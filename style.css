@@ -1,0 +1,119 @@
+@font-face {
+  font-family: 'montserrat';
+  src: url(Montserrat-SemiBold.otf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'montserrat';
+  overflow: hidden !important;
+}
+
+.container {
+  padding: 0 !important;
+  height: 100vh!important;
+  overflow: hidden !important;
+  margin: 0 !important;
+}
+
+
+.head h1 {
+  line-height: 1;
+  font-size: 1rem;
+}
+
+.head p {
+  font-size: .7rem;
+  color: #fff;
+  line-height: 1;
+  margin: 0 40px;
+}
+
+.slider {
+  width: 100%;
+  z-index: 1;
+  /* height: 100%; */
+}
+
+
+.slide {
+  height: 100vh !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+
+}
+
+.slide .head {
+  position: absolute;
+  line-height: 1;
+  bottom: 0%;
+  left: 0%;
+  height: fit-content!important;
+  text-align: center;
+  width: 100%;
+  color: #fff;
+  padding: 10px 15px;
+  background: rgba(0, 0, 0, .5);
+}
+
+
+
+
+.slide:nth-child(1) {
+
+  background: url(src/five.jpg) no-repeat center top / cover !important;
+}
+
+.slide:nth-child(2) {
+  background: url(src/four.jpg) no-repeat center top / cover !important;
+
+}
+
+.slide:nth-child(3) {
+  background: url(src/two.jpg) no-repeat center top / cover !important;
+
+}
+
+.slide:nth-child(4) {
+  background: url(src/one.jpg) no-repeat center top / cover !important;
+}
+
+.slide:nth-child(5) {
+  background: url(src/six.jpg) no-repeat center top / cover !important;
+}
+
+.btn #prev {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+}
+
+.btn #next {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+
+}
+
+.btn button {
+  z-index: 9999 !important;
+  border: none;
+  background: transparent;
+  color: #fff;
+  outline: none;
+  font-size: 2rem;
+  font-family: sans-serif !important;
+}
+
+
+/* JavaScript */
+
+.current {
+  opacity: 1 !important;
+  transition: all .3s ease-out;
+}
